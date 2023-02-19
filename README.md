@@ -1,6 +1,6 @@
 # nginx-rtmp-ffmpeg
 
-No arquivo ```nginx.conf```, o ffmpeg a transmissão em ```http://172.16.100.12:8000``` e converte para 3 bitrates diferentes utilizando o parâmetro do hls ```hls_variant```.
+No arquivo ```nginx.conf```, o ffmpeg ouve transmissão em ```http://172.16.100.12:8000``` e converte para 3 bitrates diferentes utilizando o parâmetro do hls ```hls_variant```.
 
 A transmissão foi feita pelo Radio Boss, mas pode ser utilizado qualquer serviço de streaming. Neste caso, está subindo em 320kbps utilizando OPUS.
 
