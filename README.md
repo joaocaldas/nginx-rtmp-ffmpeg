@@ -10,3 +10,7 @@ Para utilizar o rtmp no nginx, é necessário o módulo para NGINX ```libnginx-m
 
 Para instalar no Debian 11:
 ```sudo apt install libnginx-mod-rtmp```
+
+
+** RECOMENDAÇÃO ** 
+Compile seu ffmpeg com libfdk_aac, a qualidade melhora consideravelmente. Você pode utilizar um bitrate menor (menos tráfego) com uma qualidade superior ao AAC compilado nativamente do ffmpeg.
