@@ -1,0 +1,24 @@
+server {
+	listen 80;
+
+	location / {
+		autoindex on;
+		add_header Access-Control-Allow-Origin *;
+		root /var/www/live;
+
+		types {
+            application/vnd.apple.mpegurl m3u8;
+            video/mp2t ts;
+        }
+        add_header Cache-Control no-cache;
+	}
+
+    location /stat {
+        rtmp_stat all;
+        rtmp_stat_stylesheet /stat.xsl;
+    }
+
+    location /stat.xsl {
+        root /var/www/live;
+    }
+}
