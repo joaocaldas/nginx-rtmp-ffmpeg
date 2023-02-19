@@ -12,5 +12,5 @@ Para instalar no Debian 11:
 ```sudo apt install libnginx-mod-rtmp```
 
 
-** RECOMENDAÇÃO ** 
+# RECOMENDAÇÃO  
 Compile seu ffmpeg com libfdk_aac, a qualidade melhora consideravelmente. Você pode utilizar um bitrate menor (menos tráfego) com uma qualidade superior ao AAC compilado nativamente do ffmpeg.
